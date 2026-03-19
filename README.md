@@ -1,6 +1,6 @@
-# 🏗️ Automated Project Analytics Platform
+# 🏗️ End-to-End Internal Operations & Project Management System
 
-> A production-grade **Python platform** for project analytics, workflow automation, and data-driven reporting — built with **FastAPI**, **Streamlit**, and **SQLAlchemy**, demonstrating full-stack development, relational data modelling, and process automation.
+> A production-grade system supporting 100+ projects for internal operations, project analytics, workflow automation, and data-driven reporting — built with **Python**, **FastAPI**, **Streamlit**, **Baserow API**, **SQL**, **Plotly**, and **Power Automate**, reducing manual administrative workload by ~40%.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -25,7 +25,7 @@ This is not a tutorial or coursework project. It mirrors a **real production sys
 - Has **real users** (project managers, directors)
 - Manages **real data** (projects, contacts, time entries)
 - Has **real consequences** if it breaks
-- Replaced **manual admin processes** saving hours per week
+- Replaced **manual admin processes** reducing manual administrative workload by ~40% through automation and data manipulation.
 
 ---
 
@@ -72,7 +72,7 @@ graph TD
 ### 3. Time Tracking & Analytics
 - Stage-level burn rate analysis
 - Risk detection (projects exceeding 80% of allocated hours)
-- Executive-level performance dashboards
+- Built Streamlit dashboards for real-time KPI tracking, reducing insight retrieval time from hours to seconds for cross-functional teams.
 - CSV/PDF export for reporting
 
 ### 4. Document Automation
@@ -94,10 +94,10 @@ graph TD
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
 | **Frontend** | Streamlit | Internal dashboard UI |
-| **Backend** | FastAPI | REST API with Pydantic validation |
-| **Database** | SQLite (dev) / PostgreSQL (prod) | Relational data storage |
+| **Backend** | FastAPI, Baserow API | REST API with Pydantic validation and idempotent logic |
+| **Database** | SQL (SQLite/PostgreSQL) | Relational data storage |
 | **PDF Engine** | ReportLab | Professional document generation |
-| **Document Processing** | python-docx | Word document automation |
+| **Document Processing** | python-docx, Power Automate | Word document automation and workflows |
 | **Testing** | pytest | Unit and integration tests |
 | **Data Analysis** | Pandas, Plotly | Analytics and visualisations |
 
